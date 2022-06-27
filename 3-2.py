@@ -22,3 +22,23 @@ class AmericanDate:
         if lend == 1:
             day = '0' + str(day)
         self.day = day
+    def get_year(self):
+        return self.year
+
+    def get_month(self):
+        return self.month
+
+    def get_day(self):
+        return self.day
+
+    def set_year(self, new_year):
+        self.year = new_year
+
+    def set_month(self, new_month):
+        self.month = new_month
+
+    def set_day(self, new_day):
+        self.day = new_day
+
+    def format(self):
+        return (str(self.month) + '.' + str(self.day) + '.' + str(self.year))
